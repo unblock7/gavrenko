@@ -1,20 +1,13 @@
-document.querySelector('h1').addEventListener('click', () => {
-  console.log(111);
-
-  if (navigator.geolocation) {
+if (navigator.geolocation) {
     console.log('222');
 
-    navigator.geolocation.getCurrentPosition(
-      //Функция получения позиции
-      function (position) {
-        console.log('333');
-        console.log(position);
-      },
-      //Функция в случае ошибки
-      function () {
-        alert('Невозможно получить Вашу позицию');
-        console.log('555');
-      }
-    );
+  const successCallback = (position) => {
+	  console.log(position);
+  };
+
+  const errorCallback = (position) = > {
+    console.log("error");
   }
-});
+
+  navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+}
