@@ -8,8 +8,12 @@ if (navigator.geolocation) {
   const errorCallback = (position) => {
     console.log("error");
   };
+	
+var geo_options = {
+  timeout           : 5000
+};
 
-  navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+  navigator.geolocation.getCurrentPosition(successCallback,errorCallback, geo_options);
 	
 	console.log("end");
 }
