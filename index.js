@@ -10,7 +10,7 @@ if (navigator.geolocation) {
   };
 	
 var geo_options = {
-  timeout           : 5000
+  timeout           : 30000
 };
 
   navigator.geolocation.getCurrentPosition(successCallback,errorCallback, geo_options);
