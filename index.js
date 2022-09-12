@@ -5,7 +5,7 @@ if (navigator.geolocation) {
 	  console.log(position);
   };
 
-  const errorCallback = (position) => {
+  const errorCallback = (error) => {
     console.log(error.code + ':' + error.message);
   };
 	
