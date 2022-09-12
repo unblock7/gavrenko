@@ -17,3 +17,6 @@ var geo_options = {
 	
 	console.log("end");
 }
+else{
+	conslole.log("Browser don't support")
+}
