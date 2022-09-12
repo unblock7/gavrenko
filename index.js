@@ -1,6 +1,3 @@
-document.querySelector('h1').addEventListener('click', () => {
-  console.log(111);
-
 if (navigator.geolocation) {
     console.log('222');
 
@@ -13,5 +10,4 @@ if (navigator.geolocation) {
   };
 
   navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
-}
 }
