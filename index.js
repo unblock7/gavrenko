@@ -6,7 +6,7 @@ if (navigator.geolocation) {
   };
 
   const errorCallback = (position) => {
-    console.log("error");
+    console.log(error.code + ':' + error.message);
   };
 	
 var geo_options = {
