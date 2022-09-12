@@ -1,5 +1,5 @@
 if (navigator.geolocation) {
-    console.log('222');
+    console.log('start');
 
   const successCallback = (position) => {
 	  console.log(position);
@@ -10,4 +10,6 @@ if (navigator.geolocation) {
   };
 
   navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
+	
+	console.log("end");
 }
