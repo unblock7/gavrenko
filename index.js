@@ -5,9 +5,9 @@ if (navigator.geolocation) {
 	  console.log(position);
   };
 
-  const errorCallback = (position) = > {
+  const errorCallback = (position) => {
     console.log("error");
-  }
+  };
 
   navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
 }
